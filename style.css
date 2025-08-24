@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f3f1;
+  color: #004d29;
+}
+
+header {
+  background-color: #0a662a;
+  padding: 15px 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 2px 6px rgba(15, 111, 62, 0.4);
+}
+
+
+.logo {
+  background-color: #0F6F3E;
+  font-weight: 900;
+  font-size: 1.8rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(15, 111, 62, 0.6);
+  user-select: none;
+  letter-spacing: 2px;
+}
+
+
+header h1 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin: 0;
+  user-select: none;
+}
+.explore-header h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #a3d9a5; /* lighter green underline */
+  padding-bottom: 8px;
+  letter-spacing: 1.2px;
+}
+
+.explore-hero {
+  background-color: #0a662a; /* deep Starbucks green */
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  user-select: none;
+}
+
+.explore-content {
+  max-width: 800px;
+}
+
+.explore-hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.explore-hero p {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.explore-btn {
+  background-color: white;
+  color: #0a662a;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 40px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #0a662a;
+  color: white;
+  box-shadow: none;
+}
+
+main {
+  display: flex;
+  max-width: 1100px;
+  margin: 30px auto;
+  gap: 30px;
+  padding: 0 15px;
+}
+
+.menu-grid {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.drink-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgb(0 77 41 / 0.15);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+}
+
+.drink-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgb(0 77 41 / 0.3);
+}
+
+.drink-info {
+  margin-bottom: 15px;
+}
+
+.drink-name {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+  color: #004d29;
+}
+
+.drink-desc {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  min-height: 54px;
+}
+
+.price-wrap {
+  font-weight: 700;
+  color: #00704a;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.price-old {
+  text-decoration: line-through;
+  font-weight: 400;
+  color: #999;
+  margin-left: 10px;
+  font-size: 0.9rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-btn,
+.qty-control {
+  background-color: #00704a;
+  border: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 77, 41, 0.3);
+  transition: background-color 0.3s ease;
+  font-size: 1.3rem;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-btn:hover,
+.qty-control:hover {
+  background-color: #004d29;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.qty-num {
+  font-weight: 700;
+  min-width: 28px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #004d29;
+}
+
+.order-panel {
+  flex: 1;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgb(0 77 41 / 0.15);
+  padding: 25px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 320px;
+}
+
+.order-panel h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #006241;
+  border-bottom: 3px solid #00704a;
+  padding-bottom: 14px;
+  user-select: none;
+}
+
+.order-summary-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: 300px;
+  padding-right: 5px;
+}
+
+.order-summary-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.order-summary-list::-webkit-scrollbar-thumb {
+  background-color: #00704a;
+  border-radius: 4px;
+}
+
+.order-item-new {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #e1e8e4;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+.order-item-details {
+  flex-grow: 1;
+}
+
+.order-item-name-new {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0 0 4px 0;
+  color: #004d29;
+}
+
+.order-item-qty-new,
+.order-item-price-new {
+  font-weight: 600;
+  color: #00704a;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.order-total-section {
+  border-top: 2px solid #00704a;
+  padding-top: 18px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #004d29;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.place-order-btn {
+  background-color: #00704a;
+  color: white;
+  font-weight: 700;
+  padding: 16px;
+  border: none;
+  border-radius: 28px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgb(0 77 41 / 0.4);
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.place-order-btn:hover {
+  background-color: #004d29;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .order-panel {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+.site-footer {
+  background-color: #1c2733;
+  color: #a0a9b8;
+  padding: 40px 20px 20px 20px;
+  font-family: 'Montserrat', sans-serif;
+  user-select: none;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto 25px auto;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-column {
+  min-width: 160px;
+  flex: 1;
+}
+
+.footer-column h3 {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+  color: #a0a9b8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #00704a; /* Starbucks green highlight */
+}
+
+.footer-bottom {
+  border-top: 1px solid #2e3a49;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #65707a;
+}
+
+/* Responsive Footer */
+@media (max-width: 700px) {
+  .footer-columns {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
